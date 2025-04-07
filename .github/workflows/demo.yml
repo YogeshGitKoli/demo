@@ -20,3 +20,6 @@ jobs:
       - name: run python file
         run: python test.py
 
+      - name: Displying company name
+        run: echo "you will be part of ${{secrets.COMPANY_NAME}}"
+
