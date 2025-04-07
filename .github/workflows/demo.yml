@@ -9,6 +9,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: test demo1
-        run: echo "Hello, Yogesh in GitHub Actions!"
+      - name: run python msg
+        run: echo "Now python is going to run"
+
+      - name: install python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      
+      - name: run python file
+        run: python test.py
 
